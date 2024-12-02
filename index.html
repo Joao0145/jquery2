@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar/Ocultar Conteudo</title>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+    <!--- Incluindo jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <h1>Bem-vindo ao jQuery!</h1>
+    <button id="btnToggle">Mostrar/Ocultar Texto</button>
+    <div id="conteudo" style="display: none; margin-top: 20px;">
+        <p>Este e um texto que pode ser mostrado ou ocultado com animaçao.</p>
+    </div>
+    <p id="mensagem"></p>
+
+    <script>
+        // Codigo jQuery
+        $(document).ready(function() {
+            $('#btnToggle').click(function() {
+                $('#conteudo').slideToggle();  // Animaçao de deslizamento para mostrar ou ocultar
+            });
+        });
+
+
+    </script>
+</body>
+</html>
